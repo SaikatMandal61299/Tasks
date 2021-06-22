@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_app/views/home.dart';
+import 'package:login_app/views/pay.dart';
 
 
 
