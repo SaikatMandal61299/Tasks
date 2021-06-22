@@ -92,6 +92,8 @@ class OptionScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(
+              begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
                 colors: [
                   Colors.purple,
                   Colors.red,
