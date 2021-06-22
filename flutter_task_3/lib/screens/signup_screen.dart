@@ -89,6 +89,8 @@ class _SignupScreenState extends State<SignupScreen> {
           Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
                     colors: [
                       Colors.amber,
                       Colors.redAccent,
