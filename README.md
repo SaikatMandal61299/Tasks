@@ -1,4 +1,4 @@
 # Tasks
 Flutter Assigments
 
-All files are reuploaded as the previous files were removed accidently by me.
+flutter_task_3 is the minor project
