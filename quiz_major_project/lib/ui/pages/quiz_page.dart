@@ -5,6 +5,8 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:quiz_major_project/ui/pages/quiz_finished.dart';
 import 'package:html_unescape/html_unescape.dart';
 
+import 'home.dart';
+
 class QuizPage extends StatefulWidget {
   final List<Question> questions;
   final Category category;
@@ -150,13 +152,16 @@ class _QuizPageState extends State<QuizPage> {
               FlatButton(
                 child: Text("Yes"),
                 onPressed: () {
-                  Navigator.pop(context, true);
+                  Navigator.pushReplacement(context, MaterialPageRoute(
+                      builder: (context) => HomePage()
+                  ));
+                  Navigator.of(context, rootNavigator: true).pop();
                 },
               ),
               FlatButton(
                 child: Text("No"),
                 onPressed: () {
-                  Navigator.pop(context, false);
+                  Navigator.of(context, rootNavigator: true).pop();
                 },
               ),
             ],
